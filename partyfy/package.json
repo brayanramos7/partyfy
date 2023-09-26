@@ -1,0 +1,39 @@
+{
+    "name": "partyfy",
+    "version": "0.1.7",
+    "description": "A Node.js library for generating rainbow party gifs",
+    "main": "dist/partyfy.cjs.js",
+    "module": "dist/partyfy.esm.js",
+    "source": "src/partyfy.js",
+    "author": "Dillon Mulroy",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/dmmulroy/partyfy.git"
+    },
+    "scripts": {
+      "build": "rollup -c",
+      "dev": "rollup -c -w",
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "preinstall": "npx npm-force-resolutions"
+    },
+    "bin": {
+      "partyfy": "bin/partyfy-cli.js"
+    },
+    "dependencies": {
+      "commander": "^3.0.2",
+      "file-type": "^12.2.0",
+      "get-pixels": "^3.3.2",
+      "gifwrap": "^0.9.2"
+    },
+    "devDependencies": {
+      "npm-force-resolutions": "^0.0.3",
+      "rollup": "^1.19.4"
+    },
+    "files": [
+      "dist"
+    ],
+    "resolutions": {
+      "jpeg-js": "0.4.1"
+    }
+  }
